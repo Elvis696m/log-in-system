@@ -23,9 +23,9 @@ function logIn() {
     else if (password.value === '') {
         message.textContent = 'Password cannot be empty';
     }
-    else if (username.value === 'Elvis' && password.value === '1234') {
+    else if (username.value.trim() === 'Elvis' && password.value.trim() === '1234') {
         message.textContent = `Welcome ${username.value}`;
-     }
+    }
     else {
         message.textContent = 'Invalid password or username. Please try again!';
     }
